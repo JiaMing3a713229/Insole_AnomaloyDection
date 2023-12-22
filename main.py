@@ -35,7 +35,7 @@ def write_to_excel():
     count = 0
     while True:
         time.sleep(0.1)
-        print(isLogState)
+        # print(isLogState)
         # print("Task1 work")
         # if(((len(result_l) > 10) and (len(result_r) > 10)) and message_arrived):
         #     count += 1
@@ -59,7 +59,7 @@ def write_to_excel():
             int_dataL = [int(x) for x in list_result_l]
             sheet.append(int_dataL)
             if(count % 200 == 0):
-                workbook.save("NormalData_test.xlsx")
+                workbook.save("./Dataset/NormalData_L2.xlsx")
 
             
 
